@@ -1,0 +1,18 @@
+#N canvas 912 259 434 665 12;
+#X obj 95 380 delwrite~ \$0-buffer 1000;
+#X obj 149 469 delread~ \$0-buffer 10;
+#X obj 145 514 *~;
+#X floatatom 182 516 5 0 0 0 - - - 0;
+#X obj 121 604 outlet~;
+#X obj 104 289 inlet~;
+#X obj 249 287 inlet;
+#X obj 174 287 inlet;
+#X floatatom 164 422 5 0 0 0 - - - 0;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X connect 2 0 4 0;
+#X connect 3 0 2 1;
+#X connect 5 0 0 0;
+#X connect 6 0 3 0;
+#X connect 7 0 8 0;
+#X connect 8 0 1 0;
